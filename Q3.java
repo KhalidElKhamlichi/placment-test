@@ -7,7 +7,11 @@ public class Q3 {
 		
 		String word = sc.nextLine();
 		
-		String reversed = new StringBuilder(word).reverse().toString();
+		StringBuilder reversed = new StringBuilder();
+		
+		for (int i = word.length()-1; i >= 0; i--) {
+			reversed.append(String.valueOf(word.charAt(i)));
+		}
 		
 		System.out.println(reversed);
 
